@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<link rel="stylesheet" href="calculator2.css">
+</head>
+ <body>
+    <center><h3><u>Welcome to <i>ADAMSTECH</i> website Calculator</u></h3></center>
+<div class="container">
+<input type="text"  class="display" id="display" readonly>
+<input type="text" class="mem" id="mem" readonly value=0>
+
+<div class="pad">
+<button onclick="clearAll()">ON</button>
+<button onclick="recall()">RCL</button>
+<button onclick="addToMemory()">M+</button>
+<button onclick="subToMemory()">M-</button> 
+<button onclick="clearMemory()">CM</button>
+
+<!-- New clear button -->
+<button onclick="clearDisplay()">C</button>
+<button onclick="percent()">%</button>
+<button onclick="appendToDisplay('/')">/</button>
+<button onclick="appendToDisplay('7')">7</button>
+<button onclick="appendToDisplay('8')">8</button>
+<button onclick="appendToDisplay('9')">9</button> 
+<button onclick="appendToDisplay('*')">*</button> 
+<button onclick="appendToDisplay('4')">4</button>
+<button onclick="appendToDisplay('5')">5</button>
+<button onclick="appendToDisplay('6')">6</button> 
+<button onclick="appendToDisplay('-')">-</button>
+<button onclick="appendToDisplay('1')">1</button>
+<button onclick="appendToDisplay('2')">2</button>
+<button onclick="appendToDisplay('3')">3</button>
+<button onclick="appendToDisplay('+')">+</button>
+<button onclick="appendToDisplay('.')">.</button>
+<button onclick="appendToDisplay('0')">0</button>
+<button onclick="appendToDisplay('00')">00</button>
+
+<button onclick="calculate()">=</button>
+
+</div>
+
+</div>
+
+</body>
+<script src="firstcalculator.js"></script>
+</html>
+
